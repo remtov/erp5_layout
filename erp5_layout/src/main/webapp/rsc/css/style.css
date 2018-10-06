@@ -7,6 +7,7 @@ body {
 	marginheight: 0px;
 	marginwidth: 0px;
 	overflow-x: hidden;
+	margin: 0px;
 }
 
 div {
@@ -36,35 +37,37 @@ td {
 }
 
 /* 샵은아이디선택자 */
+
+
 #navi {
 	width: 100%;
-	height: 40px;
+	height: 50px;
 	top: 0px;
 	position: fixed;
 	background-color: white;
 	z-index: 2;
 }
 
-#logoLine {
-	top: 40px;
-	width: 1200px;
-	height: 40px;
-	width: 1200px;
-	border: 1px solid gray;
-}
-
 #container {
 	/* background-color: #dfdfdf; */
 	position: relative;
-	top: 40px;
-	border: 0px;
 	cellpadding: 0px;
 	cellspacing: 0px;
 	width: 1200px;
-	padding: 0px;
+	padding-top: 80px;
 	margin: auto;
 	z-index: 1;
-	overflow: visible
+	overflow: visible;
+	border: 0px;
+	cellpadding: 0px;
+	margin: auto;
+}
+
+#SearchLine {
+	width: 1200px;
+	height: 50px;
+
+	/* 	border: 1px solid gray; */
 }
 
 #header {
@@ -170,7 +173,7 @@ td {
 		width: auto;
 		float: none;
 	}
-	#logoLine {
+	#searchLine {
 		width: auto;
 	}
 	#content {
@@ -190,7 +193,7 @@ td {
 	}
 }
 
-@media ( min-width :800px) and (max-width:1200px) {
+@media ( min-width :800px) and ( max-width:1200px ) {
 	/* 가로 1200px이하일경우 스마트폰 레이아웃으로 변경 */
 	#container {
 		width: auto;
@@ -210,7 +213,7 @@ td {
 	.contentRight {
 		width: 48%;
 	}
-	#logoLine {
+	#searchLine {
 		width: auto;
 	}
 	#content {
